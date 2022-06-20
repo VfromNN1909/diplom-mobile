@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">AFA</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="calculator_description">Выберите нужные предметы и выставите количество баллов. После чего нажмите на кнопку. Приложение подберет подходящие вузы</string>
+
+    <string-array name="maths">
+        <item>Математика (База)</item>
+        <item>Математика (Профиль)</item>
+    </string-array>
+
+    <string-array name="other">
+        <item>Биология</item>
+        <item>Химия</item>
+        <item>Информатика</item>
+        <item>Физика</item>
+        <item>География</item>
+        <item>История</item>
+        <item>Обществознание</item>
+        <item>Литература</item>
+        <item>Английский язык</item>
+        <item>Немецкий язык</item>
+        <item>Китайский язык</item>
+        <item>Испанский язык</item>
+        <item>Французский язык</item>
+        <item>----------------</item>
+    </string-array>
+
+    <string name="cannot_be_empty">Поле не может быть пустым</string>
+</resources>

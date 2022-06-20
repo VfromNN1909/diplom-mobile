@@ -1,0 +1,11 @@
+{
+    "data" : [
+        { "title": "Северо-Западный институт управления РАНХиГС", "city" : "Санкт-Петербург", "logourl": "https://vuzopedia.ru/storage/app/uploads/public/f87/949/66d/thumb__74_74_0_0_auto.png" }
+        { "title : "Санкт-Петербургский реставрационно-строительный институт", "city" : "Санкт-Петербург", "logourl": "https://vuzopedia.ru/storage/app/uploads/public/7c1/aa0/aab/thumb__74_74_0_0_auto.png" }
+        { "title": "Университет науки и технологий «МИСИС»", "city" : "Москва", "logourl": "https://vuzopedia.ru/storage/app/uploads/public/29e/d42/2bc/thumb__74_74_0_0_auto.png" }
+        { "title": "Санкт-Петербургский Гуманитарный университет профсоюзов", "city" : "Санкт-Петербург", "logourl": "https://vuzopedia.ru/storage/app/uploads/public/51d/06d/a68/thumb__74_74_0_0_auto.png" }
+        { "title": "Новосибирский государственный архитектурно-строительный университет (Сибстрин)", "city" : "Новосибирск", "logourl": "https://vuzopedia.ru/storage/app/uploads/public/b4d/30e/dcc/thumb__74_74_0_0_auto.png" }
+        { "title": "Российский новый университет", "city" : "Москва", "logourl": "https://vuzopedia.ru/storage/app/uploads/public/29a/a31/2e5/thumb__74_74_0_0_auto.png" }
+        { "title": "Нижегородский государственный педагогический университет им. Козьмы Минина (Мининский университет)", "city" : "Нижний Новгрод", "logourl": "https://vuzopedia.ru/storage/app/uploads/public/103/c47/ee7/thumb__74_0_0_0_auto.png" }
+    ]
+}

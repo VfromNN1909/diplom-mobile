@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/app_nav"
+    app:startDestination="@id/loginFragment">
+
+    <fragment
+        android:id="@+id/calculatorFragment"
+        android:name="me.vlasoff.afa.presentation.calculator.CalculatorFragment"
+        android:label="fragment_calculator"
+        tools:layout="@layout/fragment_calculator" >
+        <action
+            android:id="@+id/action_calculatorFragment_to_universitiesFragment"
+            app:destination="@id/universitiesFragment" />
+        <action
+            android:id="@+id/action_calculatorFragment_to_calculatorResultsFragment"
+            app:destination="@id/calculatorResultsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/universitiesFragment"
+        android:name="me.vlasoff.afa.presentation.universities.UniversitiesFragment"
+        android:label="fragment_universities"
+        tools:layout="@layout/fragment_universities" >
+        <action
+            android:id="@+id/action_universitiesFragment_to_calculatorFragment"
+            app:destination="@id/calculatorFragment" />
+        <action
+            android:id="@+id/action_universitiesFragment_to_univerInfoFragment"
+            app:destination="@id/univerInfoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/univerInfoFragment"
+        android:name="me.vlasoff.afa.presentation.univerinfo.UniverInfoFragment"
+        android:label="fragment_univer_info"
+        tools:layout="@layout/fragment_univer_info" >
+        <action
+            android:id="@+id/action_univerInfoFragment_to_universitiesFragment"
+            app:destination="@id/universitiesFragment" />
+        <argument
+            android:name="title"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="me.vlasoff.afa.presentation.auth.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment_to_registrationFragment"
+            app:destination="@id/registrationFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_universitiesFragment"
+            app:destination="@id/universitiesFragment"
+            app:popUpTo="@id/univerInfoFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/registrationFragment"
+        android:name="me.vlasoff.afa.presentation.auth.RegistrationFragment"
+        android:label="RegistrationFragment" >
+        <action
+            android:id="@+id/action_registrationFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/action_registrationFragment_to_universitiesFragment"
+            app:destination="@id/universitiesFragment"
+            app:popUpTo="@id/univerInfoFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/calculatorResultsFragment"
+        android:name="me.vlasoff.afa.presentation.calculator.CalculatorResultsFragment"
+        android:label="fragment_calculator_results"
+        tools:layout="@layout/fragment_calculator_results" >
+        <argument
+            android:name="option"
+            app:argType="me.vlasoff.afa.presentation.calculator.CalculatorOptions" />
+    </fragment>
+</navigation>

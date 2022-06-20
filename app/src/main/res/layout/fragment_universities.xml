@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".presentation.universities.UniversitiesFragment">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewUnivers"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:orientation="vertical">-->
+
+<!--        <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:padding="16dp">-->
+
+<!--            <ImageView-->
+<!--                android:id="@+id/univerLogo1"-->
+<!--                android:layout_width="100dp"-->
+<!--                android:layout_height="100dp"-->
+<!--                android:src="@drawable/first"-->
+<!--                app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintTop_toTopOf="parent" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/universityTitle1"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginStart="8dp"-->
+<!--                android:textSize="15dp"-->
+<!--                app:layout_constraintEnd_toEndOf="parent"-->
+<!--                app:layout_constraintStart_toEndOf="@+id/univerLogo1"-->
+<!--                app:layout_constraintTop_toTopOf="parent"-->
+<!--                android:text="Северо-Западный институт управления РАНХиГС" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/univerCity1"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_margin="8dp"-->
+<!--                app:layout_constraintStart_toEndOf="@+id/univerLogo1"-->
+<!--                app:layout_constraintTop_toBottomOf="@+id/universityTitle1"-->
+<!--                android:text="Санкт-Петербург" />-->
+
+
+<!--        </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+<!--        <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:padding="16dp">-->
+
+<!--            <ImageView-->
+<!--                android:id="@+id/univerLogo2"-->
+<!--                android:layout_width="100dp"-->
+<!--                android:layout_height="100dp"-->
+<!--                android:src="@drawable/sec"-->
+<!--                app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintTop_toTopOf="parent" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/universityTitle2"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginStart="8dp"-->
+<!--                android:textSize="15dp"-->
+<!--                android:src="@drawable/third"-->
+<!--                app:layout_constraintEnd_toEndOf="parent"-->
+<!--                app:layout_constraintStart_toEndOf="@+id/univerLogo2"-->
+<!--                app:layout_constraintTop_toTopOf="parent"-->
+<!--                android:text="Санкт-Петербургский реставрационно-строительный институт" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/univerCity2"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_margin="8dp"-->
+<!--                app:layout_constraintStart_toEndOf="@+id/univerLogo2"-->
+<!--                app:layout_constraintTop_toBottomOf="@+id/universityTitle2"-->
+<!--                android:text="Санкт-Петербург" />-->
+
+
+<!--        </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+<!--        <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:padding="16dp">-->
+
+<!--            <ImageView-->
+<!--                android:id="@+id/univerLogo3"-->
+<!--                android:layout_width="100dp"-->
+<!--                android:layout_height="100dp"-->
+<!--                android:src="@drawable/third"-->
+<!--                app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintTop_toTopOf="parent" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/universityTitle3"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginStart="8dp"-->
+<!--                android:textSize="15dp"-->
+<!--                app:layout_constraintEnd_toEndOf="parent"-->
+<!--                app:layout_constraintStart_toEndOf="@+id/univerLogo3"-->
+<!--                app:layout_constraintTop_toTopOf="parent"-->
+<!--                android:text="Университет науки и технологий «МИСИС»" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/univerCity3"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_margin="8dp"-->
+<!--                app:layout_constraintStart_toEndOf="@+id/univerLogo3"-->
+<!--                app:layout_constraintTop_toBottomOf="@+id/universityTitle3"-->
+<!--                android:text="Москва" />-->
+
+
+<!--        </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+<!--        <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:padding="16dp">-->
+
+<!--            <ImageView-->
+<!--                android:id="@+id/univerLogo4"-->
+<!--                android:layout_width="100dp"-->
+<!--                android:layout_height="100dp"-->
+<!--                android:src="@drawable/fourth"-->
+<!--                app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintTop_toTopOf="parent" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/universityTitle4"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginStart="8dp"-->
+<!--                android:textSize="15dp"-->
+<!--                app:layout_constraintEnd_toEndOf="parent"-->
+<!--                app:layout_constraintStart_toEndOf="@+id/univerLogo4"-->
+<!--                app:layout_constraintTop_toTopOf="parent"-->
+<!--                android:text="Санкт-Петербургский Гуманитарный университет профсоюзов"-->
+<!--                />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/univerCity4"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_margin="8dp"-->
+<!--                app:layout_constraintStart_toEndOf="@+id/univerLogo4"-->
+<!--                app:layout_constraintTop_toBottomOf="@+id/universityTitle4"-->
+<!--                android:text="Санкт-Петербург" />-->
+
+
+<!--        </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+<!--        <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:padding="16dp">-->
+
+<!--            <ImageView-->
+<!--                android:id="@+id/univerLogo"-->
+<!--                android:layout_width="100dp"-->
+<!--                android:layout_height="100dp"-->
+<!--                android:src="@drawable/fifth"-->
+<!--                app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintTop_toTopOf="parent" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/universityTitle"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginStart="8dp"-->
+<!--                android:textSize="15dp"-->
+<!--                app:layout_constraintEnd_toEndOf="parent"-->
+<!--                app:layout_constraintStart_toEndOf="@+id/univerLogo"-->
+<!--                app:layout_constraintTop_toTopOf="parent"-->
+<!--                android:text="Новосибирский государственный архитектурно-строительный университет (Сибстрин)" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/univerCity"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_margin="8dp"-->
+<!--                app:layout_constraintStart_toEndOf="@+id/univerLogo"-->
+<!--                app:layout_constraintTop_toBottomOf="@+id/universityTitle"-->
+<!--                android:text="Новосибирск" />-->
+
+
+<!--        </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+<!--    </LinearLayout>-->
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
